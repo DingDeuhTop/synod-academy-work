@@ -1,0 +1,406 @@
+body {
+  margin: 0;
+}
+
+#header {
+  grid-column: 1/3;
+  grid-row: 1;
+  text-align: center;
+  display: grid;
+  padding: 10px;
+  grid-template-columns: auto auto;
+}
+
+.header-item #header_image {
+  margin: 0 auto;
+}
+
+.header-item #header_text {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.header-item #header_text input{
+  margin-right: 5px;
+}
+
+/* #side-menu */
+.left-bar {
+  width: 200px;
+  display: grid;
+  float: left;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 10px 0;
+}
+
+#side_menu ul {
+  list-style: none;
+  line-height: 50px;
+  padding: 0;
+  margin: 0 10px;
+}
+#side_menu li:hover {
+  list-style: none;
+  line-height: 50px;
+  background-color: #dbc894;
+  border-top: 1px solid #dc3545;
+}
+
+/* .navigation {
+  float: left;
+  margin: 25px 0 0 40px;
+  padding: 0;
+}
+
+.navigation li{
+  display: relative;
+  float: left;
+  margin-right: 24px;
+}
+
+.navigation li{
+  float: left;
+  position: relative;
+}
+
+.about-list li{
+  display: none;
+  position: absolute;
+} */
+
+.right-bar{
+  float: right;
+  width: 200px;
+  margin: 0 40px;
+}
+
+.right-bar #update {
+  /* background-color: #dbc894; */
+  padding: 5px;
+  border: 1px solid #dbc894;
+  margin: 10px 0;
+}
+
+.right-bar #update_content{
+  margin: 0 auto;
+  width: 150px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.right-bar #tawngtai{
+  /* background-color: #dbc894; */
+  padding: 5px;
+  border: 1px solid #dbc894;
+  margin: 10px 0;
+}
+
+.right-bar #tawngtai_content{
+  margin: 0 auto;
+  width: 150px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.right-bar #periodical_documents{
+  /* background-color: #dbc894; */
+  padding: 5px;
+  border: 1px solid #dbc894;
+  margin: 10px 0;
+
+}
+
+.right-bar #doc_content{
+  margin: 0 auto;
+  width: 150px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+#content {
+  display: grid;
+  margin-top: 10px;
+}
+
+.text-content #box {
+  /* background-color: rgba(231, 224, 224, 0.131); */
+  /* text-decoration: underline; */
+  text-transform: capitalize;
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+#image-content {
+  grid-column: 1/1;
+  /* column-count: 1; */
+  /* margin-right: 200px; */
+}
+
+#image-content img {
+  width: 100%;
+  height: auto;
+}
+
+/* #content-item {
+  column-gap: 20px;
+  margin-right: 200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  line-height: 20px;
+  background-color: rgb(27, 52, 73);
+} */
+
+#content-item{
+  margin: 50px 0;
+}
+
+
+#content-item h1 {
+  text-align: center;
+}
+
+#content-item ul {
+  column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  line-height: 20px;
+  list-style: none;
+}
+
+
+#content-item li {
+  background-color: #bbe2ee;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+#content-item li:hover {
+  background-color: #6a939f;
+  color: #b7b4ab;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid #35dc8b;
+}
+
+#content-item p{
+  margin: 80px auto;
+  text-align: center;
+}
+
+.media{
+  background-color: rgb(75, 122, 122);
+  margin: 30px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.media h1 {
+  text-align: center;
+}
+
+#media-ministry {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.media-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.media-content #sub-content{
+  border-left: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  margin: 4px;
+  padding: 5px;
+}
+
+.media-image {
+  margin: 0 auto;
+}
+
+.media-content p {
+  text-decoration: underline;
+}
+
+.media-content p:hover {
+  text-decoration: underline;
+  background-color: rgb(136, 140, 143);
+}
+
+.media-content ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.media-content li a{
+  text-decoration: none;
+}
+
+#sub-content li {  
+  line-height: 30px;
+  color: #dc3545;
+  list-style: none;
+}
+
+.media-content li:hover {
+  background-color: #b7b4ab;
+  color: black;
+  line-height: 30px;
+  list-style: none;
+}
+
+#mission-item{
+  border-radius: 10px;
+  background-color: rgb(75, 122, 122);
+}
+
+#mission{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mission-image{
+  margin: 0 auto;
+}
+
+.mission-image img{
+  width: 300px;
+  border-radius: 4px;
+}
+
+#mission-item h1{
+  text-align: center;
+}
+
+
+.mission-content ul{
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  line-height: 30px;
+  border-left: 1px solid rgb(0, 0, 0);
+}
+
+.mission-content li:hover{
+  background-color: #dc3545;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+}
+#church-group h1{
+  text-align: center;
+}
+
+/* #church-content ul{
+  margin: 0 auto;
+} */
+
+#church-content ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0;
+}
+
+#church-content li {
+  width: 300px;
+  height: 250px;
+  background-color: #bbe2ee;
+  margin: 4px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#church-content li a{
+  text-decoration: none;
+  color: rgb(91, 73, 70);
+}
+
+#church-content p{
+  margin: 0, auto;
+}
+
+#church-content  .dot{
+  height: 200px;
+  width: 200px;
+  border-radius: 80%;
+  border: 1px solid #dbc894;
+}
+
+#footer{
+  width: 100%;
+  float: left;
+  background-color: #2e2c2a;
+  color: #ffffff;
+}
+
+#footer-content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: auto 200px;
+  width: 75%;
+}
+
+#usefullink ul {
+  list-style: none;
+  line-height: 30px;
+  padding-left: 0;
+}
+
+#usefullink ul a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+#usefullink ul a:hover {
+  text-decoration: underline;
+  color: rgb(92, 85, 3);
+}
+
+/* #usefullink ul {
+  list-style: none;
+  line-height: 30px;
+  padding-left: 0;
+}
+
+#usefullink ul a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+#usefullink ul a:hover {
+  text-decoration: underline;
+  color: rgb(92, 85, 3);
+}
+
+#footer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.footer-contact {
+  margin-left: 200px;
+}
+
+.links {
+  margin: 0 60px;
+}
+
+.tawngtai {
+  margin-right: 200px;
+} */
