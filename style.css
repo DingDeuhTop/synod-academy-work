@@ -3,25 +3,33 @@ body {
 }
 
 #header {
-  grid-column: 1/3;
-  grid-row: 1;
-  text-align: center;
-  display: grid;
-  padding: 10px;
-  grid-template-columns: auto auto;
+  padding: 10px;  
+  background-color: #dbc894;
 }
 
-.header-item #header_image {
+
+.header-content{
+  width: 800px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#header_image p{
+  margin: 0 10px;
+}
+
+#header_image img {
+  width: 60px;
+  height: 60px;
+  float: left;
 }
 
 .header-item #header_text {
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto auto;
 }
 
-.header-item #header_text input{
+.header-item #header_text input {
   margin-right: 5px;
 }
 
@@ -89,58 +97,90 @@ ul.navigation li ul.dropdown-menu{
   position: absolute;
 } */
 
-.right-bar{
+.right-bar {
   float: right;
   width: 200px;
-  margin: 0 40px;
+  margin: 10px 40px;
 }
 
 .right-bar #update {
-  /* background-color: #dbc894; */
   padding: 5px;
   border: 1px solid #dbc894;
   border-radius: 3px;
-  margin: 10px 0;
 }
 
-.right-bar #update_content{
-  margin: 0 auto;
-  width: 150px;
-  height: auto;
-  background-color: #ffffff;
-}
-
-.right-bar #update_content ul{
-  list-style: none;
+.right-bar #update ul {
   padding: 0;
-  line-height: 30px;
 }
 
-.right-bar #update_content li{
+.right-bar #update li {
+  height: auto;
+  line-height: 30px;
+  list-style: none;
   background-color: #a8eaca;
   border-radius: 3px;
   padding: 5px;
+  margin: 5px 0;
 }
 
-.right-bar #tawngtai{
+.right-bar #update li:hover {
+  background-color: #62a384;
+  color: #35dc8b;
+}
+
+/* .right-bar #update_content{
+  margin: 0 auto;
+  width: 150px;
+  height: auto;
+  background-color: #ffffff;
+} */
+
+.right-bar #update_content ul {
+  padding: 0;
+}
+
+.right-bar #update_content li {
+  height: auto;
+  line-height: 30px;
+  list-style: none;
+  background-color: #a8eaca;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+
+.right-bar #tawngtai {
   padding: 5px;
   border: 1px solid #dbc894;
   margin: 10px 0;
   border-radius: 3px;
 }
 
-.right-bar #tawngtai_content{
-  margin: 0 auto;
-  width: 150px;
+.right-bar #tawngtai_content li {
   height: auto;
-  background-color: #ffffff;
+  line-height: 30px;
+  list-style: none;
+  background-color: #a8eaca;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 5px 0;
 }
 
-.right-bar #tawngtai_content ul{
+.right-bar #tawngtai_content li:hover {
+  background-color: #62a384;
+  color: #35dc8b;
+}
+
+.right-bar #tawngtai .text-items button {
+  margin: 4px 0;
+}
+
+.right-bar #tawngtai_content ul {
   padding: 0;
 }
 
-.right-bar li{
+.right-bar li {
   list-style: none;
   background-color: #a8eaca;
   border-radius: 3px;
@@ -149,19 +189,18 @@ ul.navigation li ul.dropdown-menu{
   margin: 5px 0;
 }
 
-.right-bar #periodical_documents{
+.right-bar #periodical_documents {
   padding: 5px;
   border: 1px solid #dbc894;
   margin: 10px 0;
   border-radius: 3px;
-
 }
 
-.right-bar #doc_content ul{
+.right-bar #doc_content ul {
   padding: 0;
 }
 
-.right-bar #doc_content li{
+.right-bar #doc_content li {
   height: auto;
   line-height: 30px;
   list-style: none;
@@ -169,6 +208,11 @@ ul.navigation li ul.dropdown-menu{
   border-radius: 3px;
   padding: 5px;
   margin: 5px 0;
+}
+
+.right-bar #doc_content li:hover {
+  background-color: #62a384;
+  color: #35dc8b;
 }
 
 #content {
@@ -206,10 +250,9 @@ ul.navigation li ul.dropdown-menu{
   background-color: rgb(27, 52, 73);
 } */
 
-#content-item{
+#content-item {
   margin: 50px 0;
 }
-
 
 #content-item h1 {
   text-align: center;
@@ -223,9 +266,17 @@ ul.navigation li ul.dropdown-menu{
   list-style: none;
 }
 
-
 #content-item li {
   background-color: #bbe2ee;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+#content-item li:last-child {
+  background-color: #768083;
+  color: #bbe2ee;
   margin: 0 auto;
   width: 200px;
   height: 200px;
@@ -239,16 +290,17 @@ ul.navigation li ul.dropdown-menu{
   height: 200px;
   border-radius: 10px;
   border: 1px solid #35dc8b;
+  font-size: 20px;
 }
 
-#content-item p{
+#content-item p {
   margin: 80px auto;
   text-align: center;
 }
 
-.media{
+.media {
   background-color: rgb(75, 122, 122);
-  margin: 30px 0;
+  margin: 50px 0;
   padding: 5px;
   border-radius: 5px;
 }
@@ -267,7 +319,7 @@ ul.navigation li ul.dropdown-menu{
   grid-template-columns: repeat(2, 1fr);
 }
 
-.media-content #sub-content{
+.media-content #sub-content {
   border-left: 1px solid rgb(0, 0, 0);
   text-align: center;
   margin: 4px;
@@ -292,11 +344,12 @@ ul.navigation li ul.dropdown-menu{
   list-style: none;
 }
 
-.media-content li a{
+.media-content li a {
   text-decoration: none;
+  color: #2e2c2a;
 }
 
-#sub-content li {  
+#sub-content li {
   line-height: 30px;
   color: #dc3545;
   list-style: none;
@@ -309,32 +362,32 @@ ul.navigation li ul.dropdown-menu{
   list-style: none;
 }
 
-#mission-item{
+#mission-item {
   border-radius: 10px;
   background-color: rgb(75, 122, 122);
+  margin: 50px 0;
 }
 
-#mission{
+#mission {
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.mission-image{
+.mission-image {
   margin: 0 auto;
 }
 
-.mission-image img{
+.mission-image img {
   width: 300px;
   border-radius: 4px;
 }
 
-#mission-item h1{
+#mission-item h1 {
   text-align: center;
 }
 
-
-.mission-content ul{
+.mission-content ul {
   padding: 0;
   list-style: none;
   display: grid;
@@ -344,21 +397,22 @@ ul.navigation li ul.dropdown-menu{
   border-left: 1px solid rgb(0, 0, 0);
 }
 
-.mission-content li:hover{
+.mission-content li:hover {
   background-color: #dc3545;
   color: #ffffff;
   text-align: center;
   border-radius: 5px;
 }
-#church-group h1{
+#church-group h1 {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 /* #church-content ul{
   margin: 0 auto;
 } */
 
-#church-content ul{
+#church-content ul {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -374,30 +428,30 @@ ul.navigation li ul.dropdown-menu{
   padding: 10px;
 }
 
-#church-content li a{
+#church-content li a {
   text-decoration: none;
   color: rgb(91, 73, 70);
 }
 
-#church-content p{
+#church-content p {
   margin: 0, auto;
 }
 
-#church-content  .dot{
+#church-content .dot {
   height: 200px;
   width: 200px;
   border-radius: 80%;
   border: 1px solid #dbc894;
 }
 
-#footer{
+#footer {
   width: 100%;
   float: left;
   background-color: #2e2c2a;
   color: #ffffff;
 }
 
-#footer-content{
+#footer-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
