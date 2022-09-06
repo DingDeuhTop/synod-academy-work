@@ -25,7 +25,6 @@ body {
   margin-right: 5px;
 }
 
-/* #side-menu */
 .left-bar {
   width: 200px;
   display: grid;
@@ -47,24 +46,45 @@ body {
   border-top: 1px solid #dc3545;
 }
 
-/* .navigation {
+/* ul.navigation{
   float: left;
   margin: 25px 0 0 40px;
   padding: 0;
+  list-style: none;
 }
 
-.navigation li{
-  display: relative;
+ul.navigation li{
   float: left;
   margin-right: 24px;
 }
 
-.navigation li{
-  float: left;
+.navigation li a{
+  text-decoration: none;
+}
+
+ul.navigation li{
   position: relative;
 }
 
-.about-list li{
+ul.navigation li ul.dropdown-menu{
+  display: none;
+  position: absolute;
+
+} */
+/* .navigation{
+  position:relative;
+  display: block;
+}
+
+.navigation:hover .dropdown-menu{
+  display: block;
+}
+
+.navigation:hover .drp-btn{
+  background-color: #6a939f;
+}
+
+.dropdown-menu{
   display: none;
   position: absolute;
 } */
@@ -79,6 +99,7 @@ body {
   /* background-color: #dbc894; */
   padding: 5px;
   border: 1px solid #dbc894;
+  border-radius: 3px;
   margin: 10px 0;
 }
 
@@ -89,11 +110,23 @@ body {
   background-color: #ffffff;
 }
 
+.right-bar #update_content ul{
+  list-style: none;
+  padding: 0;
+  line-height: 30px;
+}
+
+.right-bar #update_content li{
+  background-color: #a8eaca;
+  border-radius: 3px;
+  padding: 5px;
+}
+
 .right-bar #tawngtai{
-  /* background-color: #dbc894; */
   padding: 5px;
   border: 1px solid #dbc894;
   margin: 10px 0;
+  border-radius: 3px;
 }
 
 .right-bar #tawngtai_content{
@@ -103,19 +136,39 @@ body {
   background-color: #ffffff;
 }
 
+.right-bar #tawngtai_content ul{
+  padding: 0;
+}
+
+.right-bar li{
+  list-style: none;
+  background-color: #a8eaca;
+  border-radius: 3px;
+  line-height: 30px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
 .right-bar #periodical_documents{
-  /* background-color: #dbc894; */
   padding: 5px;
   border: 1px solid #dbc894;
   margin: 10px 0;
+  border-radius: 3px;
 
 }
 
-.right-bar #doc_content{
-  margin: 0 auto;
-  width: 150px;
+.right-bar #doc_content ul{
+  padding: 0;
+}
+
+.right-bar #doc_content li{
   height: auto;
-  background-color: #ffffff;
+  line-height: 30px;
+  list-style: none;
+  background-color: #a8eaca;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 5px 0;
 }
 
 #content {
