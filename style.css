@@ -281,7 +281,7 @@ body {
 }
 
 .media {
-  background-color: rgb(75, 122, 122);
+  background-color: #81bfbf;
   margin: 50px 0;
   padding: 5px;
   border-radius: 5px;
@@ -347,7 +347,7 @@ body {
 
 #mission-item {
   border-radius: 10px;
-  background-color: rgb(75, 122, 122);
+  background-color: #81bfbf;
   margin: 50px 0;
 }
 
@@ -355,6 +355,7 @@ body {
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 30px;
 }
 
 .mission-image {
@@ -408,7 +409,7 @@ body {
   background-color: #bbe2ee;
   margin: 4px;
   border-radius: 5px;
-  padding: 10px;
+  padding: 18px;
   box-shadow: 7px 11px 0 0 #fff0f5;
 }
 
@@ -426,8 +427,8 @@ body {
 }
 
 #church-content li:last-child p {
-  margin: 66px 126px;
-    font-size: 78px;
+  margin: 94px 87px;
+    font-size: 50px;
 }
 
 #church-content .dot {
