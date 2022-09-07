@@ -9,10 +9,13 @@ body {
 }
 
 .header-content {
-  width: 800px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+#header_image{
+  margin-left: 250px;
 }
 
 #header_image p {
@@ -57,9 +60,18 @@ body {
   background-color: #dbc894;
   border-top: 1px solid #dc3545;
 }
-.drop-btn li {
+.drop-btn {
+  display: block;
+}
+
+.drop-btn li{
   display: block;
   position: relative;
+}
+
+.drop-btn ul li ul{
+  display: none;
+  position: absolute;
 }
 
 .dropdown-menu {
@@ -254,21 +266,24 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 10px;
+  box-shadow: 4px 4px 12px 0px #bbe2ee
+
 }
 
 #content-item li {
   background-color: #bbe2ee;
   margin: 0 auto;
+  color: #768083;
   width: 200px;
   height: 200px;
   border-radius: 10px;
-  box-shadow: 7px 11px 0 0 rgb(208 239 245)
+  box-shadow: 4px 4px 12px 0px #768083
 }
 
 
 #content-item li:hover {
   background-color: #6a939f;
-  color: #b7b4ab;
+  color: #dddddd;
   width: 200px;
   height: 200px;
   border-radius: 10px;
@@ -317,10 +332,11 @@ body {
   text-decoration: underline;
 }
 
-.media-content p:hover {
+/* .media-content p:hover {
   text-decoration: underline;
   background-color: rgb(136, 140, 143);
-}
+  border-radius: 2px;
+} */
 
 .media-content ul {
   padding-left: 0;
@@ -339,8 +355,10 @@ body {
 }
 
 .media-content li:hover {
-  background-color: #b7b4ab;
+  background-color: #6a939f;
   color: black;
+  border: 1px solid #37d4d4;
+  border-radius: 5px;
   line-height: 30px;
   list-style: none;
 }
@@ -376,15 +394,18 @@ body {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  text-align: center;
   line-height: 30px;
   border-left: 1px solid rgb(0, 0, 0);
+}
+
+.mission-content li{
+  margin-left: 10px;
+  text-align: center;
 }
 
 .mission-content li:hover {
   background-color: #dc3545;
   color: #ffffff;
-  text-align: center;
   border-radius: 5px;
 }
 #church-group h1 {
@@ -415,6 +436,7 @@ body {
 
 #church-content li:hover {
   background-color: #839fa7;
+  border: 1px solid #ffa9c4;
 }
 
 #church-content li a {
