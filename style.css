@@ -93,13 +93,14 @@ body {
 .right-bar {
   float: right;
   width: 200px;
-  margin: 10px 40px;
+  margin: 0 10px 0 20px;
 }
 
 .right-bar #update {
   padding: 5px;
   border: 1px solid #dbc894;
   border-radius: 3px;
+  margin-top: 10px;
 }
 
 .right-bar #update ul {
@@ -473,6 +474,7 @@ body {
   gap: 10px;
   margin: auto 200px;
   width: 75%;
+  padding: 0 20px;
 }
 
 #usefullink ul {
