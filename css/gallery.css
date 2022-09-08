@@ -1,0 +1,38 @@
+
+.right-item ul{
+    list-style: none;
+    overflow: hidden;
+    display: block;
+    float: right;
+}
+
+.right-item li{
+    border: 1px solid;
+    margin: 0 30px 10px 0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.image-item{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.image-item ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    list-style: none;
+}
+
+.image-item li{
+    width: 300px;
+    height: 200px;
+    border: 1px solid;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.image img{
+    width: 300px;
+}

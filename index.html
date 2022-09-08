@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Synod</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="container" >
@@ -23,12 +23,12 @@
             </div>
             <div id="header_text">
               <input type="text" />
-              <button onclick="drawerLeft = !drawerLeft">search</button>
+             <input type="submit" value="search"> 
             </div>
           </div>
         </div>
   
-        <div id="side_menu" class="left-bar">
+        <div id="side_menu" >
           <nav>
             <ul>
               <li>Home</li>
@@ -110,51 +110,14 @@
               <li>Counselling</li>
               <li>Prayer Request</li>
               <li>Letter</li>
-              <li>Gallery</li>
+              <li>
+                <a href="gallery.html">
+                Gallery
+              </a>
+            </li>
             </ul>
           </nav>
         </div>
-        
-        <!-- <div class="right-bar">
-          <div id="update">
-            <h3>Notification</h3>
-            <hr>
-            <div id="update_content">
-              <ul>
-                <li>asdfsadf</li>
-              </ul>
-            </div>
-          </div>
-          <div id="tawngtai">
-              <h3>Prayer Request</h3>
-              <hr>
-            <div id="tawngtai_content">
-              <ul>
-                <li>asdfsadf</li>
-                <li>asdfsadf</li>
-              </ul>
-            </div>
-            <div class="text-items">
-              <input type="text">
-              <button>submit
-  
-              </button>
-            </div>
-          </div>
-          <div id="periodical_documents">
-            <h3>Periodical Documents</h3>
-            <hr>
-            <div id="doc_content">
-              <ul>
-                <li>asdfsadf</li>
-                <li>asdfsadf</li>
-                <li>asdfsadf</li>
-                <li>asdfsadf</li>
-                <li>asdfsadf</li>
-              </ul>
-            </div>
-          </div>
-        </div> -->
   
         <div id="content">
           <div class="text-content">
@@ -162,23 +125,39 @@
               <q>Mizoram Presbyterian Church is one of the constituent bodies of the General Assembly of The Presbyterian Church of India. The Synod, Having its headquaters at Aizawl is the highest decision making body of the Church.</q> <a href="#">Read more...</a>
             </div>
             <div id="image-content">
-              <!-- <p id="box">
-                  Recovery Happens every time with god
-                </p> -->
+
               <img src="img/img3.jpg" alt="image" />
             </div>
-            <!-- <div id="image-content">
-              <img src="img/img3.jpeg" alt="image">
-            </div> -->
+
           </div>
 
           <div class="news-content">
             <div id="update">
               <h3>News</h3>
               <hr>
-              <div id="update_content">
-                <ul>
-                  <li>asdfsadf</li>
+              <div >
+                <ul id="update_content">
+                  <li>
+                    <img src="img/img6.png" alt="">
+                    <p>
+                      Obituary: Rev Lalhmingthanga(81) 
+                    </p>
+                    <a href="#">read more</a>
+                  </li>
+                  <li>
+                    <img src="img/img6.png" alt="">
+                    <p>
+                      Synod Finance Committee Vawi 142-na 
+                    </p>
+                    <a href="#">read more</a>
+                  </li>
+                  <li>
+                    <img src="img/img6.png" alt="">
+                    <p>
+                      PBS Graduation Day vawi 52-na hmang 
+                    </p>
+                    <a href="#">read more</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -187,27 +166,31 @@
                 <hr>
               <div id="tawngtai_content">
                 <ul>
-                  <li>asdfsadf</li>
-                  <li>asdfsadf</li>
+                  <li>Kindly pray for my spiritual life in our saviour lord Jesus Christ progress</li>
+                  <li>Ka nun hi a hlim thei thlat lo a, ka nun ah lal isua a lo lal ber a, a rawng ka lo bawl ve thei na tur in min lo tawngtai pui dawn nia.</li>
                 </ul>
               </div>
-              <div class="text-items">
-                <input type="text">
-                <button>submit
-      
-                </button>
-              </div>
+
+              <form action="#">
+                <input type="text" id="input" name="input" placeholder="Enter anything">
+                <input type="submit">
+              </form>
             </div>
             <div id="periodical_documents">
               <h3>Periodical Documents</h3>
               <hr>
               <div id="doc_content">
                 <ul>
-                  <li>asdfsadf</li>
-                  <li>asdfsadf</li>
-                  <li>asdfsadf</li>
-                  <li>asdfsadf</li>
-                  <li>asdfsadf</li>
+                  <li>Agape</li>
+                  <li>Didakhe</li>
+                  <li>Kristian Naupang</li>
+                  <li>Kristian Thalai</li>
+                  <li>Kristian Tlangau</li>
+                  <li>Presbyterian</li>
+                  <li>Ramthar</li>
+                  <li>Synfocity</li>
+                  <li>Synod Newsletter</li>
+                  <li>Other</li>
                 </ul>
               </div>
             </div>

@@ -8,8 +8,6 @@ body {
   background-color: #dbc894;
 }
 
-
-
 .header-content {
   margin: 0 auto;
   display: grid;
@@ -42,25 +40,34 @@ body {
   margin: 10px 60px;
 }
 
-.text-2{
+.text-2 {
   font-weight: bold;
 }
 
-.left-bar {
+#side_menu {
   width: 200px;
-  display: grid;
   float: left;
-  grid-template-columns: repeat(1, 1fr);
-  margin: 10px 0;
+  margin: 10px 30px;
 }
 
 #side_menu ul {
   list-style: none;
   line-height: 50px;
+  width: 200px;
   padding: 0;
-  width: 280px;
   margin: 0 10px;
 }
+
+#side_menu ul li {
+  padding: 0 10px;
+}
+
+#side_menu li {
+  border: 1px solid;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
 #side_menu li:hover {
   list-style: none;
   line-height: 50px;
@@ -85,7 +92,10 @@ body {
   display: none;
   position: absolute;
   background-color: #c0ae9d;
-  
+}
+
+.dropdown-container ul {
+  padding: 0 10px;
 }
 
 .dropdown-container li a {
@@ -97,7 +107,7 @@ body {
   background-color: #dddddd;
 }
 
-.drop-btn:hover .dropdown-container{
+.drop-btn:hover .dropdown-container {
   display: block;
 }
 
@@ -106,37 +116,36 @@ body {
   z-index: 1;
 }
 
-.drop-dept{
+.drop-dept {
   display: block;
 }
 
-.dept-item{
+.dept-item {
   display: none;
   position: absolute;
-  background-color: #c0ae9d;
+  background-color: #dbc894;
+  width: 300px;
+  padding: 0 10px;
 }
 
-.dept-item li a{
+
+
+.dept-item li a {
   text-decoration: none;
   color: #4b5b54;
 }
 
-.dept-item li a:hover{
+.dept-item li a:hover {
   background-color: #dddddd;
 }
 
-.drop-dept:hover .dept-item{
-  display: block;
-}
-.drop-btn .dept-item:hover{
-  display: block;
-  z-index: 1;
-}
 
-.drop-dept li{
-  position: relative;
+
+.drop-dept:hover .dept-item {
   display: block;
-  padding: 5px;
+}
+.drop-btn .dept-item:hover {
+  display: block;
 }
 
 .news-content {
@@ -144,13 +153,13 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 30px;
 }
 
 #update {
   padding: 5px;
-  border: 1px solid #dbc894;
   border-radius: 3px;
+  background-color: #e9e9e9;
 }
 
 #update ul {
@@ -166,36 +175,56 @@ body {
   margin: 5px 0;
   font-family: serif;
 }
- #update li:hover {
+#update li:hover {
   background-color: #dbc894;
   color: #4b5b54;
 }
 
-/* .right-bar #update_content{
-  margin: 0 auto;
-  width: 150px;
-  height: auto;
-  background-color: #ffffff;
-} */
-
-#update_content ul {
-  padding: 0;
+input[type=text], select {
+  width: 50%;
+  /* padding: 12px 20px; */
+  /* margin: 8px 0; */
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-#update_content li {
-  height: auto;
-  line-height: 30px;
+input[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  /* padding: 14px 20px; */
+  /* margin: 8px 0; */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+#update_content {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+#update_content li{
+  width: 200px;
   list-style: none;
-  border: 1px solid #dbc894;
   border-radius: 3px;
   padding: 5px;
-  margin: 5px 0;
+  background-color: #c6c6c6;
+  margin: 10px 30px;
+}
+#update_content li img{
+  width: 50px;
+  margin: 0 70px;
 }
 
 #tawngtai {
-  border: 1px solid #dbc894;
   padding: 5px;
   border-radius: 3px;
+  background-color: #e9e9e9;
 }
 
 #tawngtai_content li {
@@ -237,7 +266,12 @@ body {
 }
 
 #doc_content ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   padding: 0;
+  width: 500px;
+  height: 400px;
+  text-align: center;
 }
 
 #doc_content li {
@@ -247,7 +281,7 @@ body {
   border: 1px solid #dbc894;
   border-radius: 3px;
   padding: 5px;
-  margin: 5px 0;
+  margin: 5px 10px;
 }
 
 #doc_content li:hover {
@@ -257,7 +291,7 @@ body {
 
 #content {
   display: grid;
-  margin-top: 10px;
+  margin: 10px 30px 0 0;
 }
 
 .text-content #box {
@@ -336,8 +370,6 @@ body {
   border-radius: 10px;
   box-shadow: 4px 4px 12px 0px #768083;
 }
-
-
 
 #content-item p {
   margin: 80px auto;
@@ -477,7 +509,6 @@ body {
   /* box-shadow: 7px 11px 0 0 #fff0f5; */
 }
 
-
 #church-content li a {
   text-decoration: none;
   color: #0a0909;
@@ -531,30 +562,30 @@ body {
   color: rgb(92, 85, 3);
 }
 
-.footer-copyright{
+.footer-copyright {
   margin: 0 30px;
 }
 
-.logo{
+.logo {
   float: left;
   width: 600px;
 }
 
-.logo img{
+.logo img {
   width: 60px;
   height: auto;
   float: left;
 }
 
-.logo{
+.logo {
   margin: 0 40px;
 }
 
-.logo-text p{
-  margin:  10px 38px;
+.logo-text p {
+  margin: 10px 38px;
 }
 
-.footer-text{
+.footer-text {
   float: right;
   text-align: right;
 }
