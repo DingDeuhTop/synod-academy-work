@@ -8,341 +8,390 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="container" class="contain-item">
-      <div id="header" class="header-item">
-        <div class="header-content">
-          <div id="header_image">
-            <div class="img">
-              <img src="img/img6.png" alt="logo">
+    <div class="container" >
+      <div class="inner-container">
+        <div id="header" >
+          <div class="header-content">
+            <div id="header_image">
+              <div class="img">
+                <img src="img/img6.png" alt="logo">
+              </div>
+              <div class="header-text">
+                <p class="text-1">Presbyterian Church of India</p>
+                <p class="text-2">Mizoram Synod</p>
+              </div>
             </div>
-            <div class="header-text">
-              <p>Presbyterian Church of India</p>
-              <p>Mizoram Synod</p>
+            <div id="header_text">
+              <input type="text" />
+              <button onclick="drawerLeft = !drawerLeft">search</button>
             </div>
-          </div>
-          <div id="header_text">
-            <input type="text" />
-            <button onclick="drawerLeft = !drawerLeft">search</button>
           </div>
         </div>
-      </div>
-      <div id="side_menu" class="left-bar">
-        <nav>
-          <ul class="drop-btn">
-            <li>Home</li>
-            <li >
-              About us
-              <ul class="dropdown-menu">
-                <li >
-                  <a href="#">
-                    At a glance
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    Statistical Information
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    Doctrine
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    Contact
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    Guest House
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li>Deptt./Comt.</li>
-            <li>Media ministry</li>
-            <li>Counselling</li>
-            <li>Prayer Request</li>
-            <li>Letter</li>
-            <li>Gallery</li>
-          </ul>
-        </nav>
-      </div>
-      <div class="right-bar">
-        <div id="update">
-          <h3>Notification</h3>
-          <hr>
-          <div id="update_content">
+  
+        <div id="side_menu" class="left-bar">
+          <nav>
             <ul>
-              <li>asdfsadf</li>
+              <li>Home</li>
+              <li class="drop-btn">
+                About us
+                <ul class="dropdown-container">
+                  <li >
+                    <a href="#">
+                      At a glance
+                    </a>
+                  </li>
+                  <hr>
+                  <li>
+                    <a href="#">
+                      Statistical Information
+                    </a>
+                  </li>
+                  <hr>
+                  <li>
+                    <a href="#">
+                      Doctrine
+                    </a>
+                  </li>
+                  <hr>
+                  <li>
+                    <a href="#">
+                      Contact
+                    </a>
+                  </li>
+                  <hr>
+                  <li>
+                    <a href="#">
+                      Guest House
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li  class="drop-dept">
+                Deptt./Comt.
+                <ul class="dept-item">
+                  <li>
+                    <a href="#">Youth Fellowship(Kristian Thalai Pawl)</a>
+                  </li>
+                  <hr>
+                  <li>
+                    <a href="#">Family Guidance & Counselling Center</a>
+                  </li>
+                  <hr>
+                  <li>
+                    <a href="#">Presbyterian Bible School</a>
+                  </li>
+                  <hr>
+                  <li>
+                    <a href="#">Presbyterian Communications</a>
+                  </li>
+                  <hr>
+                  <li>
+                    <a href="#">Presbyterian Women's Fellowship</a>
+                  </li>
+                  <hr>
+                  <li>
+                    <a href="#">Synod Archives</a>
+                  </li>
+                  <hr>
+                  <li>
+                    <a href="#">Synod Information & Publicity(Synfo)</a>
+                  </li>
+                  <hr>
+                  <li>
+                    <a href="#">Synod Hospital</a>
+                  </li>
+                  <hr>
+                  <li>
+                    <a href="#">Synod Mission Board(SMB)</a>
+                  </li>
+                </ul>
+              </li>
+              <li>Media ministry</li>
+              <li>Counselling</li>
+              <li>Prayer Request</li>
+              <li>Letter</li>
+              <li>Gallery</li>
             </ul>
-          </div>
+          </nav>
         </div>
-        <div id="tawngtai">
-            <h3>Prayer Request</h3>
+        
+        <div class="right-bar">
+          <div id="update">
+            <h3>Notification</h3>
             <hr>
-          <div id="tawngtai_content">
-            <ul>
-              <li>asdfsadf</li>
-              <li>asdfsadf</li>
-            </ul>
-          </div>
-          <div class="text-items">
-            <input type="text">
-            <button>submit
-
-            </button>
-          </div>
-        </div>
-        <div id="periodical_documents">
-          <h3>Periodical Documents</h3>
-          <hr>
-          <div id="doc_content">
-            <ul>
-              <li>asdfsadf</li>
-              <li>asdfsadf</li>
-              <li>asdfsadf</li>
-              <li>asdfsadf</li>
-              <li>asdfsadf</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="content">
-      <div class="text-content">
-        <div id="image-content">
-          <!-- <p id="box">
-              Recovery Happens every time with god
-            </p> -->
-          <img src="img/img3.jpg" alt="image" />
-        </div>
-        <!-- <div id="image-content">
-          <img src="img/img3.jpeg" alt="image">
-        </div> -->
-      </div>
-      <div id="content-item">
-        <h1>Deptt./Comt.</h1>
-        <hr>
-        <ul>
-          <li>
-            <p>
-              Youth Fellowship(Kristan Thalai Pawl)
-            </p>
-          </li>
-          <li>
-            <p>
-              Family Guidance Bible & Counselling Center
-            </p>
-          </li>
-          <li>
-            <p>
-              Presbyterian Bible School
-            </p>
-          </li>
-          <li>
-            <p>
-              View More...
-            </p>
-          </li>
-        </ul>
-      </div>
-
-      <div id="mission-item">
-        <h1>Some Academic</h1>
-        <hr>
-        <div id="mission">
-          <div class="mission-image">
-            <img src="img/img5.jpeg" alt="image">
-          </div>
-          <div class="mission-content">
-            <ul>
-              <li>P.C.Girls School</li>
-              <li>Sikulpui</li>
-              <li>PES</li>
-              <li>Mizoram Christian College</li>
-              <li>Missionary Training College(MTC)</li>
-              <li>P.C.Girls School</li>
-              <li>Aizawl Theological College</li>
-              <li>View all</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div id="church-group">
-        <h1>Some Programme</h1>
-        <hr>
-        <div id="church-content">
-          <ul>
-              <li>
-                <a href="/">
-                  Family Guidance & Counselling Center
-                </a>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.
-                </p>
-                <a href="/">read more...</a>
-              </li>
-            <li>
-              <a href="/">
-                Kohhran Hmeichhia
-              </a>
-
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
-              </p>
-              <a href="/">read more...</a>
-            </li>
-            <li>
-              <a href="/">
-                KTP (Youth Ministry)
-              </a>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
-              </p>
-                <a href="/">read more...</a>
-              </li>
-            <li>
-              <!-- <a href="/">
-                MSSU
-              </a> -->
-              <p>
-                <a href="#">
-                  more...
-                </a>
-              </p>
-              <!-- <a href="/">read more...</a> -->
-              </li>
-            
-        </div>
-      </div>
-      <div class="media">
-        <h1>Media Ministry</h1>
-        <hr>
-        <div id="media-ministry">
-          <div class="media-image">
-            <img src="img/img4.jpeg" alt="choir image" />
-          </div>
-          <div class="media-content">
-            <div id="sub-content">
-              <p>Mizoram Synod Choir</p>
+            <div id="update_content">
               <ul>
-                <li>
-                  <a href="/"> A Tobul </a>
-                </li>
-                <li>
-                  <a href="/"> Inkaihhruaina </a>
-                </li>
-              </ul>
-            </div>
-            <div id="sub-content">
-              <p>Article & Sermon</p>
-              <ul>
-                <li>
-                  <a href="#">
-                    visit/read
-                  </a>
-                </li>
+                <li>asdfsadf</li>
               </ul>
             </div>
           </div>
-        </div>
-      </div>  
-    </div>
-
-    <div id="footer">
-      <div id="footer-content">
-        <div class="footer-contact">
-          <p>Contact Us</p>
-          <hr />
-          <div class="text" id="footer-text">
-            <p>Synod Office</p>
-            <p>Mission Veng, Aizawl, Mizoram, India</p>
-            <p>Phone-91 0389 232672/2322285; 2335821(EPABX) 2314648</p>
-            <p>contact@mizoramsynod.org</p>
-          </div>
-        </div>
-        <div class="links">
-          <p>Useful Links</p>
-          <hr />
-          <div id="usefullink">
-            <ul>
-              <li>
-                <a href="/">Presbyterian Church of India</a>
-              </li>
-              <li>
-                <a href="/">Word Communion of Reformed Churches</a>
-              </li>
-              <li>
-                <a href="/">Council for World Mission</a>
-              </li>
-              <li>
-                <a href="/">Mizo History</a>
-              </li>
-              <li>
-                <a href="/">Board/Committee Members(2019-20221)</a>
-              </li>
-              <li>
-                <a href="/">Hruaina Eng Programme</a>
-              </li>
-              <li>
-                <a href="/">MPCS Manipur Area</a>
-              </li>
-              <li>
-                <a href="/">Synod Live Update</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="tawngtai">
-          <p>Tawngtai Thupui</p>
-          <hr />
           <div id="tawngtai">
-            <p>
-              Presbyterian Hospital Dandawi in hrang hranga thawtu zawng zawngte
-              leh damlo awm mekte tan
-            </p>
-            <p>visitors:707176</p>
+              <h3>Prayer Request</h3>
+              <hr>
+            <div id="tawngtai_content">
+              <ul>
+                <li>asdfsadf</li>
+                <li>asdfsadf</li>
+              </ul>
+            </div>
+            <div class="text-items">
+              <input type="text">
+              <button>submit
+  
+              </button>
+            </div>
+          </div>
+          <div id="periodical_documents">
+            <h3>Periodical Documents</h3>
+            <hr>
+            <div id="doc_content">
+              <ul>
+                <li>asdfsadf</li>
+                <li>asdfsadf</li>
+                <li>asdfsadf</li>
+                <li>asdfsadf</li>
+                <li>asdfsadf</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div id="content">
+          <div class="text-content">
+            <div class="quote">
+              <q>Mizoram Presbyterian Church is one of the constituent bodies of the General Assembly of The Presbyterian Church of India. The Synod, Having its headquaters at Aizawl is the highest decision making body of the Church.</q> <a href="#">Read more...</a>
+            </div>
+            <div id="image-content">
+              <!-- <p id="box">
+                  Recovery Happens every time with god
+                </p> -->
+              <img src="img/img3.jpg" alt="image" />
+            </div>
+            <!-- <div id="image-content">
+              <img src="img/img3.jpeg" alt="image">
+            </div> -->
+          </div>
+          <div id="content-item">
+            <h1>Deptt./Comt.</h1>
+            <hr>
+            <ul>
+              <li>
+                <p>
+                  Youth Fellowship(Kristan Thalai Pawl)
+                </p>
+              </li>
+              <li>
+                <p>
+                  Family Guidance Bible & Counselling Center
+                </p>
+              </li>
+              <li>
+                <p>
+                  Presbyterian Bible School
+                </p>
+              </li>
+              <li>
+                <p>
+                  View More...
+                </p>
+              </li>
+            </ul>
+          </div>
+    
+          <!-- <div class="media">
+            <h1>Media Ministry</h1>
+            <div id="media-ministry">
+              <div class="media-image">
+                <img src="img/img4.jpeg" alt="choir image" />
+              </div>
+              <div class="media-content">
+                <div id="sub-content">
+                  <p>Mizoram Synod Choir</p>
+                  <ul>
+                    <li>
+                      <a href="/"> A Tobul </a>
+                    </li>
+                    <li>
+                      <a href="/"> Inkaihhruaina </a>
+                    </li>
+                  </ul>
+                </div>
+                <div id="sub-content">
+                  <p>Article & Sermon</p>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        visit/read
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> -->
+    
+          <div id="church-group">
+            <h1>Programme</h1>
+            <div id="church-content">
+              <ul>
+                  <li>
+                    <a href="/">
+                      Family Guidance & Counselling Center
+                    </a>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a type
+                      specimen book. It has survived not only five centuries, but
+                      also the leap into electronic typesetting, remaining
+                      essentially unchanged.
+                    </p>
+                    <a href="/">read more...</a>
+                  </li>
+                <li>
+                  <a href="/">
+                    Kohhran Hmeichhia
+                  </a>
+    
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into
+                    electronic typesetting, remaining essentially unchanged.
+                  </p>
+                  <a href="/">read more...</a>
+                </li>
+                <li>
+                  <a href="/">
+                    KTP (Youth Ministry)
+                  </a>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into
+                    electronic typesetting, remaining essentially unchanged.
+                  </p>
+                    <a href="/">read more...</a>
+                  </li>
+                <li>
+                  <!-- <a href="/">
+                    MSSU
+                  </a> -->
+                  <p>
+                    <a href="#">
+                      more...
+                    </a>
+                  </p>
+                  <!-- <a href="/">read more...</a> -->
+                  </li>
+                
+            </div>
+          </div>
+          <div id="mission-item">
+            <h1>Academic</h1>
+            <hr>
+            <div id="mission">
+              <div class="mission-image">
+                <img src="img/img5.jpeg" alt="image">
+              </div>
+              <div class="mission-content">
+                <ul>
+                  <li>P.C.Girls School</li>
+                  <li>Sikulpui</li>
+                  <li>PES</li>
+                  <li>Mizoram Christian College</li>
+                  <li>Missionary Training College(MTC)</li>
+                  <li>P.C.Girls School</li>
+                  <li>Aizawl Theological College</li>
+                  <li>View all</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <div id="footer-content">
+            <div class="footer-contact">
+              <p>Contact Us</p>
+              <hr />
+              <div class="text" id="footer-text">
+                <p>Synod Office</p>
+                <p>Mission Veng, Aizawl, Mizoram, India</p>
+                <p>Phone-91 0389 232672/2322285; 2335821(EPABX) 2314648</p>
+                <p>contact@mizoramsynod.org</p>
+              </div>
+            </div>
+            <div class="links">
+              <p>Useful Links</p>
+              <hr />
+              <div id="usefullink">
+                <ul>
+                  <li>
+                    <a href="/">Presbyterian Church of India</a>
+                  </li>
+                  <li>
+                    <a href="/">Word Communion of Reformed Churches</a>
+                  </li>
+                  <li>
+                    <a href="/">Council for World Mission</a>
+                  </li>
+                  <li>
+                    <a href="/">Mizo History</a>
+                  </li>
+                  <li>
+                    <a href="/">Board/Committee Members(2019-20221)</a>
+                  </li>
+                  <li>
+                    <a href="/">Hruaina Eng Programme</a>
+                  </li>
+                  <li>
+                    <a href="/">MPCS Manipur Area</a>
+                  </li>
+                  <li>
+                    <a href="/">Synod Live Update</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tawngtai">
+              <p>Tawngtai Thupui</p>
+              <hr />
+              <div id="footer-tawngtai">
+                <p>
+                  Presbyterian Hospital Dandawi in hrang hranga thawtu zawng zawngte
+                  leh damlo awm mekte tan
+                </p>
+                <p>visitors:707176</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <hr>
+            <div class="logo">
+              <div class="img">
+                <img src="img/img6.png" alt="logo">
+              </div>
+              <div class="logo-text">
+                <p>Presbyterian Church of India</p>
+                <p>Mizoram Synod</p>
+              </div>
+            </div>
+            <div class="footer-text">
+              <p>Content Maintained and Updated by</p>
+              <p>Synod Information & Publicity Department (Synfo)</p>
+              <p>Copyright &copy; Mizoram Synod. All Right Reserved</p>
+            </div>
+    
           </div>
         </div>
       </div>
-      <!-- <hr>
-      <div class="footer-copyright">
-        <div class="logo">
-          <div class="img">
-            <img src="img/img6.png" alt="logo">
-          </div>
-          <div class="header-text">
-            <p>Presbyterian Church of India</p>
-            <p>Mizoram Synod</p>
-          </div>
-        </div>
-        <div class="text">
-          <p>Content Maintained and Updated by</p>
-          <p>Synod Information & Publicity Department (Synfo)</p>
-          <p>Copyright &copy; Mizoram Synod. All Right Reserved</p>
-        </div>
-
-      </div> -->
     </div>
+
     
   </body>
 </html>
