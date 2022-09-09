@@ -147,8 +147,7 @@ body {
 #side_menu {
   width: 200px;
   float: left;
-  margin: 10px 30px;
-  grid-column: 1/span2;
+  margin: 30px 30px;
 }
 
 #contact_us{
@@ -160,13 +159,16 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  margin-bottom: 30px;
 }
+
 .pic img{
   width: 500px;
+  margin: 30px 0;
 }
 
-
+.address{
+  margin: 10px 40px;
+}
 #text-content {
   width: 800px;
   height: auto;
