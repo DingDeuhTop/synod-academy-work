@@ -3,10 +3,6 @@ body {
   font-family: sans-serif;
 }
 
-.item-menu {
-  display: grid;
-  grid-template-columns: 20% 80%;
-}
 
 #header {
   padding: 10px;
@@ -48,13 +44,11 @@ body {
 .text-2 {
   font-weight: bold;
 }
-
-#side_menu {
-  width: 200px;
-  float: left;
-  margin: 10px 30px;
-  grid-column: 1/span2;
+.main {
+  display: grid;
+  grid-template-columns: 20% 80%;
 }
+
 
 #side_menu ul {
   list-style: none;
@@ -150,15 +144,88 @@ body {
   display: block;
 }
 
-.item-menu #contact_us{
-    float: right;
+#side_menu {
+  width: 200px;
+  float: left;
+  margin: 10px 30px;
+  grid-column: 1/span2;
 }
+
+#contact_us{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pic{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.pic img{
+  width: 500px;
+}
+
 
 #text-content {
   width: 800px;
   height: auto;
   border: 1px solid;
   margin: 0 90px;
+}
+
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 0 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.request{
+  margin: 0 30px;
+}
+
+.request input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.request input[type=submit] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.request input[type=submit]:hover {
+  background-color: #45a049;
 }
 
 #footer {
