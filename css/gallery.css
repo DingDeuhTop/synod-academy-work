@@ -30,7 +30,7 @@ input[type=text], select {
   
   input[type=submit] {
     width: 30%;
-    background-color: #4CAF50;
+    background-color: #636e63;
     color: white;
     padding: 12px 20px;
     margin: 0 10px;
@@ -104,8 +104,12 @@ input[type=text], select {
   background-color: #dbc894;
   border-top: 1px solid #dc3545;
 }
-.drop-btn {
+.drop-btn{
   display: block;
+}
+
+.drop-btn svg{
+  margin: -6px 16px;
 }
 
 .drop-btn li {
@@ -114,18 +118,10 @@ input[type=text], select {
   padding: 5px;
 }
 
-.drop-btn li svg {
-  margin: -6px 43px;
-}
-
-/* .drop-btn ul li ul {
-    display: none;
-  } */
-
 .dropdown-container {
   display: none;
   position: absolute;
-  background-color: #c0ae9d;
+  background-color: #dbc894;
 }
 
 .dropdown-container ul {
@@ -154,17 +150,21 @@ input[type=text], select {
   display: block;
 }
 
-.drop-dept svg {
-  margin: -6px 29px;
+
+
+.drop-dept svg{
+  margin: -6px 0;
 }
 
 .dept-item {
   display: none;
   position: absolute;
   background-color: #dbc894;
-  width: 300px;
+  width: 400px !important;
   padding: 0 10px;
 }
+
+
 
 .dept-item li a {
   text-decoration: none;
@@ -175,11 +175,20 @@ input[type=text], select {
   background-color: #dddddd;
 }
 
+
+
 .drop-dept:hover .dept-item {
   display: block;
 }
 .drop-btn .dept-item:hover {
   display: block;
+}
+
+.right-item p{
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: capitalize;
 }
 
 .right-item ul {
@@ -199,6 +208,12 @@ input[type=text], select {
 .image-item {
   width: 1000px;
   margin: 0 auto;
+}
+
+.image-item p{
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .image-item ul {

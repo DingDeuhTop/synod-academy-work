@@ -44,22 +44,39 @@ body {
   font-weight: bold;
 }
 
+.main-content{
+  display: grid;
+  grid-template-columns: 16% 80%;
+}
+
 #side_menu {
   width: 200px;
   float: left;
   margin: 10px 30px;
 }
 
+nav.sticky{
+  position:-webkit-sticky;
+  position:sticky;
+}
+
 #side_menu ul {
   list-style: none;
   line-height: 50px;
-  width: 200px;
+  width: 150px;
   padding: 0;
   margin: 0 10px;
 }
 
 #side_menu ul li {
   padding: 0 10px;
+}
+
+#side_menu ul li ul{
+  width: 200px;
+}
+#side_menu ul li ul li{
+  margin: 10px 10px;
 }
 
 #side_menu li {
@@ -74,8 +91,12 @@ body {
   background-color: #dbc894;
   border-top: 1px solid #dc3545;
 }
-.drop-btn {
+.drop-btn{
   display: block;
+}
+
+.drop-btn svg{
+  margin: -6px 16px;
 }
 
 .drop-btn li {
@@ -84,18 +105,10 @@ body {
   padding: 5px;
 }
 
-.drop-btn li svg{
-  margin: -6px 43px;
-}
-
-/* .drop-btn ul li ul {
-  display: none;
-} */
-
 .dropdown-container {
   display: none;
   position: absolute;
-  background-color: #c0ae9d;
+  background-color: #dbc894;
 }
 
 .dropdown-container ul {
@@ -124,15 +137,17 @@ body {
   display: block;
 }
 
+
+
 .drop-dept svg{
-  margin: -6px 29px;
+  margin: -6px 0;
 }
 
 .dept-item {
   display: none;
   position: absolute;
   background-color: #dbc894;
-  width: 300px;
+  width: 400px !important;
   padding: 0 10px;
 }
 
@@ -210,9 +225,15 @@ body {
 }
 
 #update_content p, a{
-  margin: 0 10px;
+  text-align: right;
+  text-decoration: none;
+  color: #0a0909;
 }
 
+#update_content a{
+  color: #047a0c;
+
+}
 
 input[type=text], select {
   width: 50%;
@@ -226,7 +247,7 @@ input[type=text], select {
 
 input[type=submit] {
   width: 30%;
-  background-color: #4CAF50;
+  background-color: #636e63;
   color: white;
   padding: 12px 20px;
   margin: 0 10px;
@@ -306,7 +327,7 @@ input[type=submit] {
 
 #content {
   display: grid;
-  margin: 10px 30px 0 0;
+  margin: 20px 0 0 0;
 }
 
 .text-content #box {
@@ -504,7 +525,12 @@ input[type=submit] {
 }
 #church-group h1 {
   text-align: center;
-  margin-bottom: 50px;
+  text-decoration: underline;
+  margin-top: 0;
+}
+
+#church-group{
+  margin: 0 42px;
 }
 
 #church-content ul {
@@ -512,6 +538,8 @@ input[type=submit] {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 0;
+  margin-bottom: 50px;
+  gap: 30px;
 }
 
 #church-content li {
@@ -581,6 +609,11 @@ input[type=submit] {
   margin: 0 30px;
 }
 
+.footer-container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .logo {
   float: left;
   width: 600px;
@@ -592,7 +625,7 @@ input[type=submit] {
   float: left;
 }
 
-.logo {
+.logo-text {
   margin: 0 40px;
 }
 
