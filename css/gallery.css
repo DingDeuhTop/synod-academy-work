@@ -75,6 +75,11 @@ input[type=text], select {
   margin: 10px 30px;
 }
 
+#side_menu ul li a{
+  text-decoration: none;
+  color: #2e2c2a;
+}
+
 .content {
   display: grid;
   grid-template-columns: 10% 70% 20%;
@@ -83,7 +88,6 @@ input[type=text], select {
 #side_menu ul {
   list-style: none;
   line-height: 50px;
-  width: 200px;
   padding: 0;
   margin: 0 10px;
 }
@@ -112,16 +116,21 @@ input[type=text], select {
   margin: -6px 16px;
 }
 
-.drop-btn li {
+.drop-btn ul{
+  width: 250px;
+  padding: 10px !important;
+}
+
+/* .drop-btn li {
   display: block;
   position: relative;
   padding: 5px;
-}
+} */
 
 .dropdown-container {
   display: none;
   position: absolute;
-  background-color: #dbc894;
+  background-color: #cec099;
 }
 
 .dropdown-container ul {
@@ -133,18 +142,10 @@ input[type=text], select {
   color: #4b5b54;
 }
 
-.dropdown-container li a:hover {
-  background-color: #dddddd;
-}
-
 .drop-btn:hover .dropdown-container {
   display: block;
 }
 
-.drop-btn .dropdown-container:hover {
-  display: block;
-  z-index: 1;
-}
 
 .drop-dept {
   display: block;
@@ -159,9 +160,9 @@ input[type=text], select {
 .dept-item {
   display: none;
   position: absolute;
-  background-color: #dbc894;
-  width: 400px !important;
-  padding: 0 10px;
+  background-color: #cec099;
+  width: 300px !important;
+  padding: 0 10px !important;
 }
 
 
@@ -279,6 +280,11 @@ input[type=text], select {
   margin: 0 30px;
 }
 
+.footer-container{
+  width: 1800px;
+  margin: 0 auto;
+}
+
 .logo {
   float: left;
   width: 600px;
@@ -290,7 +296,7 @@ input[type=text], select {
   float: left;
 }
 
-.logo {
+.logo-text {
   margin: 0 40px;
 }
 

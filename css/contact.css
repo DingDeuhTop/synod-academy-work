@@ -53,9 +53,13 @@ body {
 #side_menu ul {
   list-style: none;
   line-height: 50px;
-  width: 200px;
   padding: 0;
   margin: 0 10px;
+}
+
+#side_menu ul li a{
+  text-decoration: none;
+  color: #2e2c2a;
 }
 
 #side_menu ul li {
@@ -82,11 +86,15 @@ body {
   margin: -6px 16px;
 }
 
-.drop-btn li {
+.drop-btn ul{
+  width: 250px;
+  padding: 0 10px !important;
+}
+
+/* .drop-btn li {
   display: block;
   position: relative;
-  padding: 5px;
-}
+} */
 
 .dropdown-container {
   display: none;
@@ -130,8 +138,8 @@ body {
   display: none;
   position: absolute;
   background-color: #dbc894;
-  width: 400px !important;
-  padding: 0 10px;
+  width: 300px !important;
+  padding: 0 10px !important;
 }
 
 
@@ -284,6 +292,11 @@ input[type=submit]:hover {
   margin: 0 30px;
 }
 
+.footer-container{
+  width: 1800px;
+  margin: 0 auto;
+}
+
 .logo {
   float: left;
   width: 600px;
@@ -295,7 +308,7 @@ input[type=submit]:hover {
   float: left;
 }
 
-.logo {
+.logo-text {
   margin: 0 40px;
 }
 

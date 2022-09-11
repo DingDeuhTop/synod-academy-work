@@ -273,6 +273,10 @@ input[type=submit] {
   margin: 20px 10px;
 }
 
+#tawngtai_content li a{
+  float: right;
+}
+
 #tawngtai_content li:hover {
   background-color: #dbc894;
   color: #4b5b54;
@@ -610,7 +614,7 @@ input[type=submit] {
 }
 
 .footer-container{
-  width: 1200px;
+  width: 1800px;
   margin: 0 auto;
 }
 
