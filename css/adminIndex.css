@@ -18,7 +18,9 @@ body {
   margin-left: 250px;
 }
 
-
+.tox-statusbar__branding > a{
+  display: none;
+}
 #header_image p {
   margin: 0 10px;
 }
@@ -82,12 +84,12 @@ body {
   border-radius: 5px;
 }
 
-#side_menu ul li:first-child{
+#side_menu .admin-tag ul li:first-child{
     height: 100px;
 }
 
 
-#side_menu li:hover {
+#side_menu  li:hover {
   list-style: none;
   line-height: 50px;
   background-color: #dbc894;
@@ -193,6 +195,27 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+.image-wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 10px;
+}
+
+.image-wrapper img{
+  width: 250px;
+}
+
+.image-action .edit svg{
+  color: #599059;
+  float: left;
+  margin: 0 10px;
+}
+
+.image-action .delete svg{
+  color: #a91a10;
+  margin: 0 10px;
+}
+
 .news h1{
     text-decoration: underline;
 }
@@ -261,6 +284,7 @@ select {
   box-sizing: border-box;
 }
 
+
 .content-item h1{
     text-decoration: underline;
 }
@@ -284,4 +308,20 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.text-content label{
+  display: block;
+}
+
+.text-content input{
+  display: block;
+}
+
+.programme button{
+  background-color: #77b077;
+  border-radius: 5px;
+  border: 0;
+  color: #f5f3f3;
+  padding: 10px 15px;
 }

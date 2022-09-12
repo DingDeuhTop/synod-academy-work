@@ -79,9 +79,9 @@ body {
   background-color: #dbc894;
   border-top: 1px solid #dc3545;
 }
-.drop-btn {
+/* .drop-btn {
   display: block;
-}
+} */
 
 .drop-btn li {
   display: block;
@@ -89,9 +89,11 @@ body {
   /* padding: 5px; */
 }
 
-.drop-btn svg{
+/* .drop-btn svg{
   margin: -6px 10px;
-}
+} */
+
+
 
 /* .drop-btn ul li ul {
   display: none;
@@ -271,6 +273,27 @@ input[type=submit] {
 
 #tawngtai_content ul {
   padding: 0;
+}
+
+#tawngtai input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 10px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#tawngtai input[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .right-bar li {

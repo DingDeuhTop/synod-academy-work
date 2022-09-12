@@ -20,7 +20,7 @@
           </div>
         </div>
         <div id="header_text">
-          <input type="submit" value="Register" />
+          <button type="submit" name="register" >Register</button>
         </div>
       </div>
     </div>
@@ -28,12 +28,29 @@
       <div class="admin-content">
         <div class="container">
           <div class="admin-form">
-            <form class="edit-item" action="#">
-              <input type="text" name="username" placeholder="Enter username" />
-              <br />
-              <input type="text" name="password" placeholder="Enter password" />
-              <br />
-              <input type="submit" value="Login" />
+            <form class="edit-item" action="adminIndex.html">
+              <h3>Login</h3>
+              <div class="input-item">
+                <label for="username">Username</label>
+                <input
+                  id="username"
+                  type="text"
+                  name="username"
+                  placeholder="Enter username"
+                />
+                <br />
+              </div>
+              <div class="input-item">
+                <label for="password">Password</label>
+                <input
+                  id="password"
+                  type="password"
+                  name="password"
+                  placeholder="Enter password"
+                />
+                <br />
+              </div>
+              <button type="submit" name="login">Login</button>
             </form>
           </div>
         </div>
