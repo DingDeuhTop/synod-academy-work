@@ -253,6 +253,10 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+.prayer-request{
+  margin-top: 60px;
+}
+
 .prayer-request h3{
     text-decoration: underline;
 }
@@ -299,6 +303,10 @@ textarea{
     width: 300px;
 }
 
+.periodical-document{
+  margin-top: 60px;
+}
+
 .periodical-document input[type="text"],
 select {
   width: 80%;
@@ -314,11 +322,17 @@ select {
   text-decoration: underline;
 }
 
+.content-menu{
+  margin-top: 60px;
+}
+
+.content-other{
+  margin-top: 60px;
+}
+
 .content-other .dept h3{
     text-decoration: underline;
 }
-
-
 
 
 .content-other input[type="text"],
@@ -340,12 +354,16 @@ select {
   display: block;
 }
 
+
+
 .content-other .programme button{
   background-color: #77b077;
+  width: 90px;
   border-radius: 5px;
   border: 0;
   color: #f5f3f3;
   padding: 10px 15px;
+  margin-bottom: 10px;
 }
 
 .content-other .programme h3{
@@ -355,3 +373,8 @@ select {
 .content-item h3{
   text-decoration: underline;
 }
+
+.programme{
+  margin-top: 60px;
+}
+
