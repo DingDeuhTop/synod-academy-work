@@ -15,53 +15,18 @@ body {
 }
 
 #header_image {
-  margin-left: 250px;
+  float: left;
 }
 
-.admin-form{
-    margin: 10px 0;
-    display: flex;
+.tox-statusbar__branding > a {
+  display: none;
 }
-
-.edit-item {
-  margin: 0 auto;
-}
-
-#header_text button{
-  background-color: #97b4a7;
-  color: #232222;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 30px;
-}
-
-
-.input-item label{
-  display: block;
-  margin-bottom: 5px;
-  font-size: 14px;
-}
-
-.input-item  input{
-  display: block;
-  padding: 0 6px;
-  border: 1px solid;
-  border-radius: 4px;
-  font-size: 12px;
-  height: 25px;
-  width: 236px;
-}
-
-.edit-item button{
-  background-color: #4b5b54;
-  color: #ffff;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 30px;
-}
-
 #header_image p {
   margin: 0 10px;
+}
+
+#header_image {
+  margin-left: 250px;
 }
 
 #header_image img {
@@ -70,9 +35,12 @@ body {
   float: left;
 }
 
-#header_text {
+#header_svg {
   margin: 16px auto;
-  font-size: 20px;
+}
+
+#header_svg span {
+  margin: 0 20px;
 }
 
 #header_text input {
@@ -98,6 +66,11 @@ body {
   color: #2e2c2a;
 }
 
+.content {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  justify-items: center;
+}
 
 #side_menu ul {
   list-style: none;
@@ -114,6 +87,10 @@ body {
   border: 1px solid;
   margin: 10px 0;
   border-radius: 5px;
+}
+
+#side_menu .admin-tag ul li:first-child {
+  height: 100px;
 }
 
 #side_menu li:hover {
@@ -136,10 +113,10 @@ body {
 }
 
 /* .drop-btn li {
-    display: block;
-    position: relative;
-    padding: 5px;
-  } */
+        display: block;
+        position: relative;
+        padding: 5px;
+      } */
 
 .dropdown-container {
   display: none;
@@ -192,7 +169,57 @@ body {
   display: block;
 }
 
+.admin-tag {
+  text-align: center;
+}
+
+.admin-tag p {
+  margin: 0;
+}
+
+#header_svg{
+  float: right;
+}
+
 .container{
-    width: 700px;
-    margin: 0 auto;
+  width: 1000px;
+  margin: 0 auto;
+}
+.card{
+  float: left;
+  width: 100%;
+}
+
+.card .card-section{
+  width: 20%;
+  float: left;
+}
+
+.card .card-section .card-content{
+  background-color: #cec099;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.card-section .card-content .card-action a{
+  text-decoration: none;
+  color: #2e2c2a;
+}
+
+.information{
+  background-color: #9c9c9c18;
+  height: 100%;
+}
+
+.info-item .card .card-section{
+  width: 300px;
+  background-color: #cec099;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.info-item .card .card-section svg{
+  float: left;
 }

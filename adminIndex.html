@@ -28,12 +28,12 @@
             <p class="text-2">Mizoram Synod</p>
           </div>
         </div>
-        <!-- <div id="header_svg">
+        <div id="header_svg">
             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
             </svg>
             <span>Admin</span>
-          </div> -->
+          </div>
       </div>
     </div>
     <div class="content">
@@ -121,7 +121,9 @@
             <li>Prayer Request</li>
             <li>Letter</li>
             <li>Gallery</li>
-            <li>Logout</li>
+            <li>
+              <a href="adminlogin.html"> Logout </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -132,21 +134,27 @@
             <img src="img/img6.png" alt="" />
             <div class="image-action">
               <div class="edit">
-                <svg style="width:50px;height:50px" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M6 20H11V22H6C4.89 22 4 21.11 4 20V4C4 2.9 4.89 2 6 2H18C19.11 2 20 2.9 20 4V10.3C19.78 10.42 19.57 10.56 19.39 10.74L18 12.13V4H13V12L10.5 9.75L8 12V4H6V20M22.85 13.47L21.53 12.15C21.33 11.95 21 11.95 20.81 12.15L19.83 13.13L21.87 15.17L22.85 14.19C23.05 14 23.05 13.67 22.85 13.47M13 19.96V22H15.04L21.17 15.88L19.13 13.83L13 19.96Z" />
-              </svg>
+                <svg style="width: 50px; height: 50px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M6 20H11V22H6C4.89 22 4 21.11 4 20V4C4 2.9 4.89 2 6 2H18C19.11 2 20 2.9 20 4V10.3C19.78 10.42 19.57 10.56 19.39 10.74L18 12.13V4H13V12L10.5 9.75L8 12V4H6V20M22.85 13.47L21.53 12.15C21.33 11.95 21 11.95 20.81 12.15L19.83 13.13L21.87 15.17L22.85 14.19C23.05 14 23.05 13.67 22.85 13.47M13 19.96V22H15.04L21.17 15.88L19.13 13.83L13 19.96Z"
+                  />
+                </svg>
               </div>
               <div class="delete">
-                <svg style="width:50px;height:50px" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
-              </svg>
+                <svg style="width: 50px; height: 50px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+                  />
+                </svg>
               </div>
             </div>
           </div>
           <input type="file" value="image" />
           <input type="submit" value="Add" />
         </form>
-        <hr />
+        
         <div class="content-menu">
           <div class="news">
             <form action="#">
@@ -154,9 +162,7 @@
               <input type="file" value="logo" />
               <input type="text" placeholder="Enter title" />
               <br />
-              <textarea type="text" rows="5" cols="20">
-      Enter content </textarea
-              >
+              <textarea id="default" type="text" >Enter content </textarea>
               <br />
               <input type="submit" value="Add" />
             </form>
@@ -172,6 +178,29 @@
               <br />
               <input type="submit" value="Add" />
             </form>
+            <div class="prayer-request-content">
+              <ul>
+                  <li>Kindly pray for my spiritual life in our saviour lord Jesus Christ progress.
+                    <p>gyan@mail.com</p>
+                     <a href="#">-Gyan Prakash</a>
+                     <div class="prayer-request-action">
+                      <div class="approve">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+                      </svg>
+                      Approve
+                      </div>
+                      <div class="denied">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M12 2C17.5 2 22 6.5 22 12S17.5 22 12 22 2 17.5 2 12 6.5 2 12 2M12 4C10.1 4 8.4 4.6 7.1 5.7L18.3 16.9C19.3 15.5 20 13.8 20 12C20 7.6 16.4 4 12 4M16.9 18.3L5.7 7.1C4.6 8.4 4 10.1 4 12C4 16.4 7.6 20 12 20C13.9 20 15.6 19.4 16.9 18.3Z" />
+                      </svg>
+                      Denied
+                      </div>
+
+                     </div>
+                    </li>
+              </ul>
+            </div>
           </div>
           <div class="periodical-document">
             <form action="#">
@@ -182,7 +211,7 @@
             </form>
           </div>
         </div>
-        <hr />
+        
         <div class="content-other">
           <div class="dept">
             <h1>Deptt./Comtt.</h1>
