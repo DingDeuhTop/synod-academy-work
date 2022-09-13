@@ -204,7 +204,7 @@ body {
 
 .card-section .card-content .card-action a{
   text-decoration: none;
-  color: #2e2c2a;
+  color: #dddddd;
 }
 
 .information{
@@ -222,4 +222,13 @@ body {
 
 .info-item .card .card-section svg{
   float: left;
+}
+
+.card-action{
+  background-color: #4b5b54;
+  width: 90px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 3px;
+  color: #dddddd;
 }
