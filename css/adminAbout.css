@@ -1,349 +1,369 @@
 body {
-    margin: 0;
-    font-family: sans-serif;
-  }
-  
-  #header {
-    padding: 10px;
-    background-color: #dbc894;
-  }
-  
-  .header-content {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  #header_image {
-    margin-left: 250px;
-  }
-  
-  .tox-statusbar__branding > a{
-    display: none;
-  }
-  #header_image p {
-    margin: 0 10px;
-  }
-  
-  #header_image img {
-    width: 60px;
-    height: 60px;
-    float: left;
-  }
-  
-  #header_svg {
-    margin: 16px auto;
-  }
-  
-  #header_svg span{
-      margin: 0 20px;
-  }
-  
-  #header_text input {
-    margin-right: 5px;
-  }
-  
-  .header-text {
-    margin: 10px 60px;
-  }
-  
-  .text-2 {
-    font-weight: bold;
-  }
-  
-  #side_menu {
-    width: 200px;
-    float: left;
-    margin: 10px 30px;
-  }
-  
-  #side_menu ul li a {
-    text-decoration: none;
-    color: #2e2c2a;
-  }
-  
-  .content {
-    display: grid;
-    grid-template-columns: 20% 80%;
-  }
-  
-  #side_menu ul {
-    list-style: none;
-    line-height: 50px;
-    padding: 0;
-    margin: 0 10px;
-  }
-  
-  #side_menu ul li {
-    padding: 0 10px;
-  }
-  
-  #side_menu li {
-    border: 1px solid;
-    margin: 10px 0;
-    border-radius: 5px;
-  }
-  
-  #side_menu .admin-tag ul li:first-child{
-      height: 100px;
-  }
-  
-  
-  #side_menu  li:hover {
-    list-style: none;
-    line-height: 50px;
-    background-color: #dbc894;
-    border-top: 1px solid #dc3545;
-  }
-  .drop-btn {
-    display: block;
-  }
-  
-  .drop-btn svg {
-    margin: -6px 16px;
-  }
-  
-  .drop-btn ul {
-    width: 250px;
-    padding: 10px !important;
-  }
-  
-  /* .drop-btn li {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#header {
+  padding: 10px;
+  background-color: #dbc894;
+}
+
+.header-content {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#header_image {
+  margin-left: 250px;
+}
+
+.tox-statusbar__branding > a {
+  display: none;
+}
+#header_image p {
+  margin: 0 10px;
+}
+
+#header_image img {
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+#header_svg {
+  margin: 16px auto;
+}
+
+#header_svg span {
+  margin: 0 20px;
+}
+
+#header_text input {
+  margin-right: 5px;
+}
+
+.header-text {
+  margin: 10px 60px;
+}
+
+.text-2 {
+  font-weight: bold;
+}
+
+#side_menu {
+  width: 200px;
+  float: left;
+  margin: 10px 30px;
+}
+
+#side_menu ul li a {
+  text-decoration: none;
+  color: #2e2c2a;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+#side_menu ul {
+  list-style: none;
+  line-height: 50px;
+  padding: 0;
+  margin: 0 10px;
+}
+
+#side_menu ul li {
+  padding: 0 10px;
+}
+
+#side_menu li {
+  border: 1px solid;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+#side_menu .admin-tag ul li:first-child {
+  height: 100px;
+}
+
+#side_menu li:hover {
+  list-style: none;
+  line-height: 50px;
+  background-color: #dbc894;
+  border-top: 1px solid #dc3545;
+}
+.drop-btn {
+  display: block;
+}
+
+.drop-btn svg {
+  margin: -6px 16px;
+}
+
+.drop-btn ul {
+  width: 250px;
+  padding: 10px !important;
+}
+
+/* .drop-btn li {
         display: block;
         position: relative;
         padding: 5px;
       } */
-  
-  .dropdown-container {
-    display: none;
-    position: absolute;
-    background-color: #cec099;
-  }
-  
-  .dropdown-container ul {
-    padding: 0 10px;
-  }
-  
-  .dropdown-container li a {
-    text-decoration: none;
-    color: #4b5b54;
-  }
-  
-  .drop-btn:hover .dropdown-container {
-    display: block;
-  }
-  
-  .drop-dept {
-    display: block;
-  }
-  
-  .drop-dept svg {
-    margin: -6px 0;
-  }
-  
-  .dept-item {
-    display: none;
-    position: absolute;
-    background-color: #cec099;
-    width: 300px !important;
-    padding: 0 10px !important;
-  }
-  
-  .dept-item li a {
-    text-decoration: none;
-    color: #4b5b54;
-  }
-  
-  .dept-item li a:hover {
-    background-color: #dddddd;
-  }
-  
-  .drop-dept:hover .dept-item {
-    display: block;
-  }
-  .drop-btn .dept-item:hover {
-    display: block;
-  }
-  
-  .admin-tag{
-      text-align: center;
-  }
-  
-  .admin-tag p{
-      margin: 0;
-  }
-  
-  input[type="file"],
-  select {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 0 10px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  input[type="submit"] {
-    width: 100px;
-    background-color: #77b077;
-    color: white;
-    padding: 12px 20px;
-    margin: 0 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .image-wrapper{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 10px;
-  }
-  
-  .image-wrapper img{
-    width: 250px;
-  }
-  
-  .image-action .edit svg{
-    color: #599059;
-    float: left;
-    margin: 0 10px;
-  }
-  
-  .image-action .delete svg{
-    color: #a91a10;
-    margin: 0 10px;
-  }
-  
-  .news h1{
-      text-decoration: underline;
-  }
-  
-  .news input[type="text"],
-  select {
-    width: 80%;
-    padding: 12px 20px;
-    margin: 10px 10px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  .news input[type="file"],
-  select {
-    width: 80%;
-    padding: 12px 20px;
-    margin: 10px 10px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  input[type="submit"] {
-    width: 20%;
-    background-color: #77b077;
-    color: white;
-    padding: 12px 20px;
-    margin: 0 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .prayer-request h1{
-      text-decoration: underline;
-  }
-  
-  .prayer-request input[type="text"],
-  select {
-    width: 80%;
-    padding: 12px 20px;
-    margin: 10px 10px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  .prayer-request-content{
-    border: 1px solid #dbc894;
-    border-radius: 5px;
-    width: 350px;
-    margin: 10px 0;
-  }
-  
-  .prayer-request-content li{
-    list-style: none;
-  }
-  
-  .prayer-request-content a{
-    text-decoration: none;
-    color: #2e2c2a;
-  
-  }
-  
-  .prayer-request-action .approve svg{
-    color: #599059;
-  }
-  
-  .prayer-request-action .denied svg{
-    color: #a91a10;
-  }
-  
-  textarea{
-      padding: 12px 20px;
-      margin: 10px 10px;
-      width: 300px;
-  }
-  
-  .periodical-document input[type="text"],
-  select {
-    width: 80%;
-    padding: 12px 20px;
-    margin: 10px 10px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  
-  .content-item h1{
-      text-decoration: underline;
-  }
-  
-  
-  .content-other{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .content-other input[type="text"],
-  select {
-    width: 80%;
-    padding: 12px 20px;
-    margin: 10px 10px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  .text-content label{
-    display: block;
-  }
-  
-  .text-content input{
-    display: block;
-  }
-  
-  .programme button{
-    background-color: #77b077;
-    border-radius: 5px;
-    border: 0;
-    color: #f5f3f3;
-    padding: 10px 15px;
-  }
+
+.dropdown-container {
+  display: none;
+  position: absolute;
+  background-color: #cec099;
+}
+
+.dropdown-container ul {
+  padding: 0 10px;
+}
+
+.dropdown-container li a {
+  text-decoration: none;
+  color: #4b5b54;
+}
+
+.drop-btn:hover .dropdown-container {
+  display: block;
+}
+
+.drop-dept {
+  display: block;
+}
+
+.drop-dept svg {
+  margin: -6px 0;
+}
+
+.dept-item {
+  display: none;
+  position: absolute;
+  background-color: #cec099;
+  width: 300px !important;
+  padding: 0 10px !important;
+}
+
+.dept-item li a {
+  text-decoration: none;
+  color: #4b5b54;
+}
+
+.dept-item li a:hover {
+  background-color: #dddddd;
+}
+
+.drop-dept:hover .dept-item {
+  display: block;
+}
+.drop-btn .dept-item:hover {
+  display: block;
+}
+
+.admin-tag {
+  text-align: center;
+}
+
+.admin-tag p {
+  margin: 0;
+}
+
+input[type="file"],
+select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 0 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100px;
+  background-color: #77b077;
+  color: white;
+  padding: 12px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.image-wrapper {
+  background-color: #f3f1f1;
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 7px 1px #f1f1effc;
+  padding: 15px;
+}
+
+.image-wrapper img {
+  width: 250px;
+}
+
+.image-action{
+  float: right;
+}
+
+.image-action .edit svg {
+  color: #599059;
+  float: left;
+  margin: 0 10px;
+}
+
+.image-action .delete svg {
+  color: #a91a10;
+  margin: 0 10px;
+}
+
+.news{
+  width: 800px;
+}
+
+.news h1 {
+  text-decoration: underline;
+}
+
+.news input[type="text"],
+select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 10px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.news input[type="file"],
+select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 10px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+input[type="submit"] {
+  width: 150px;
+  background-color: #77b077;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.prayer-request h1 {
+  text-decoration: underline;
+}
+
+.prayer-request input[type="text"],
+select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 10px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.prayer-request-content {
+  border: 1px solid #dbc894;
+  border-radius: 5px;
+  width: 350px;
+  margin: 10px 0;
+}
+
+.prayer-request-content li {
+  list-style: none;
+}
+
+.prayer-request-content a {
+  text-decoration: none;
+  color: #2e2c2a;
+}
+
+.prayer-request-action .approve svg {
+  color: #599059;
+}
+
+.prayer-request-action .denied svg {
+  color: #a91a10;
+}
+
+
+
+.periodical-document input[type="text"],
+select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 10px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.content-item h1 {
+  text-decoration: underline;
+}
+
+.content-other {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content-other input[type="text"],
+select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 10px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.text-content label {
+  display: block;
+}
+
+.text-content input {
+  display: block;
+}
+
+.programme button {
+  background-color: #77b077;
+  border-radius: 5px;
+  border: 0;
+  color: #f5f3f3;
+  padding: 10px 15px;
+}
+
+.enquiry-card {
+  width: 100%;
+}
+
+.enquiry-card h4 {
+  text-decoration: underline;
+}
+
+.enquiry-card-content {
+  width: 500px;
+  background-color: #f3f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 4px 14px 0px #f1f1effc;
+}

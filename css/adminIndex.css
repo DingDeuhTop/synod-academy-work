@@ -216,6 +216,10 @@ input[type="submit"] {
   margin: 0 10px;
 }
 
+.news{
+  width: 800px;
+}
+
 .news h3{
     text-decoration: underline;
 }
@@ -273,11 +277,17 @@ select {
 }
 
 .prayer-request-content{
+  float: left;
   border: 1px solid #dbc894;
   border-radius: 5px;
   width: 350px;
   margin: 10px 0;
 }
+
+.prayer-request form{
+  width: 600px;
+}
+
 
 .prayer-request-content li{
   list-style: none;
@@ -289,12 +299,21 @@ select {
 
 }
 
-.prayer-request-action .approve svg{
-  color: #599059;
+.prayer-request-action{
+  width: 100px;
+  display: flex;
+  margin: 10px 0;
 }
 
-.prayer-request-action .denied svg{
-  color: #a91a10;
+.prayer-request-action .approve {
+  padding: 5px;
+  background-color: #599059;
+}
+
+.prayer-request-action .denied {
+  padding: 5px;
+  background-color: #a91a10;
+  margin: 0 20px;
 }
 
 textarea{

@@ -177,42 +177,52 @@ body {
   margin: 0;
 }
 
-#header_svg{
+#header_svg {
   float: right;
 }
 
-.container{
+.container {
   width: 1000px;
   margin: 0 auto;
 }
-.card{
+.card {
   float: left;
   width: 100%;
 }
 
-.card .card-section{
-  width: 20%;
+.card-section .card-content .card-add {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-section .card-content .card-add svg {
+  background-color: #4b5b54;
+  border-radius: 5px;
+}
+
+.card .card-section {
+  width: 250px;
   float: left;
 }
 
-.card .card-section .card-content{
+.card .card-section .card-content {
   background-color: #cec099;
   margin: 10px;
   padding: 30px;
   border-radius: 5px;
 }
 
-.card-section .card-content .card-action a{
+.card-section .card-content .card-action a {
   text-decoration: none;
   color: #dddddd;
 }
 
-.information{
+.information {
   background-color: #9c9c9c18;
   height: 100%;
 }
 
-.info-item .card .card-section{
+.info-item .card .card-section {
   width: 300px;
   background-color: #cec099;
   margin: 10px;
@@ -220,11 +230,11 @@ body {
   border-radius: 5px;
 }
 
-.info-item .card .card-section svg{
+.info-item .card .card-section svg {
   float: left;
 }
 
-.card-action{
+.card-action {
   background-color: #4b5b54;
   width: 90px;
   text-align: center;
@@ -232,3 +242,4 @@ body {
   border-radius: 3px;
   color: #dddddd;
 }
+
