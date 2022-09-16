@@ -5,7 +5,7 @@ body {
 
 #header {
   padding: 10px;
-  background-color: #dbc894;
+  background-color: #e1e1e1;
 }
 
 .header-content {
@@ -59,6 +59,9 @@ body {
   width: 200px;
   float: left;
   margin: 10px 30px;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  box-shadow: 5px 4px 4px 0 #d1cdcd;
 }
 
 #side_menu ul li a {
@@ -68,7 +71,7 @@ body {
 
 .content {
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 20% 80%;
   justify-items: center;
 }
 
@@ -185,9 +188,22 @@ body {
   width: 1000px;
   margin: 0 auto;
 }
-.card {
+
+.content-card {
+  margin: 10px 20px;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  box-shadow: 5px 4px 4px 0 #d1cdcd;
+  display: grid;
+  grid-template-rows: 50% ;
+}
+
+.content-card .card {
   float: left;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card-section .card-content .card-add {
@@ -206,25 +222,44 @@ body {
 }
 
 .card .card-section .card-content {
-  background-color: #cec099;
+  background-color: #c5c5c5;
   margin: 10px;
   padding: 30px;
   border-radius: 5px;
+  box-shadow: 1px 1px 7px 0 #bab9b9;
 }
-
 .card-section .card-content .card-action a {
   text-decoration: none;
   color: #dddddd;
 }
 
 .information {
-  background-color: #9c9c9c18;
-  height: 100%;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  margin: 10px 0;
+}
+
+.info-item .card .card-add-action .card-add {
+  display: flex;
+  justify-content: center;
+  background-color: #4b5b54;
+  border-radius: 5px;
+  color: #f1f1f1;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+.info-item .card .card-add-action .card-add span{
+  margin: 5px 0;
+}
+
+.info-item .card .card-add-action{
+  float: right;
 }
 
 .info-item .card .card-section {
   width: 300px;
-  background-color: #cec099;
+  background-color: #efefef;
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
@@ -242,4 +277,3 @@ body {
   border-radius: 3px;
   color: #dddddd;
 }
-
