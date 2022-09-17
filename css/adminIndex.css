@@ -92,7 +92,7 @@ body {
 #side_menu  li:hover {
   list-style: none;
   line-height: 50px;
-  background-color: #dbc894;
+  background-color: #c2c1c0;
   border-top: 1px solid #dc3545;
 }
 .drop-btn {
@@ -117,7 +117,8 @@ body {
 .dropdown-container {
   display: none;
   position: absolute;
-  background-color: #cec099;
+  background-color: #c2c1c0;
+  margin: 0 -12px !important;
 }
 
 .dropdown-container ul {
@@ -144,9 +145,10 @@ body {
 .dept-item {
   display: none;
   position: absolute;
-  background-color: #cec099;
+  background-color: #c2c1c0;
   width: 300px !important;
   padding: 0 10px !important;
+  margin: 0 -12px !important;
 }
 
 .dept-item li a {

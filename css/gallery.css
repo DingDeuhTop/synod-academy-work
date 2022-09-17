@@ -18,30 +18,28 @@ body {
   margin-left: 250px;
 }
 
-input[type=text], select {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 0 10px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  input[type=submit] {
-    width: 30%;
-    background-color: #636e63;
-    color: white;
-    padding: 12px 20px;
-    margin: 0 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
+input[type="text"],
+select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 0 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 30%;
+  background-color: #3e443e;
+  font-size: 16px;
+  color: white;
+  padding: 12px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 #header_image p {
   margin: 0 10px;
@@ -70,12 +68,12 @@ input[type=text], select {
 }
 
 #side_menu {
-  width: 200px;
+  width: 170px;
   float: left;
   margin: 10px 30px;
 }
 
-#side_menu ul li a{
+#side_menu ul li a {
   text-decoration: none;
   color: #2e2c2a;
 }
@@ -105,18 +103,18 @@ input[type=text], select {
 #side_menu li:hover {
   list-style: none;
   line-height: 50px;
-  background-color: #dbc894;
+  background-color: #c2c1c0;
   border-top: 1px solid #dc3545;
 }
-.drop-btn{
+.drop-btn {
   display: block;
 }
 
-.drop-btn svg{
+.drop-btn svg {
   margin: -6px 16px;
 }
 
-.drop-btn ul{
+.drop-btn ul {
   width: 250px;
   padding: 10px !important;
 }
@@ -130,7 +128,8 @@ input[type=text], select {
 .dropdown-container {
   display: none;
   position: absolute;
-  background-color: #cec099;
+  background-color: #c2c1c0;
+  margin: 0 -12px !important;
 }
 
 .dropdown-container ul {
@@ -146,26 +145,22 @@ input[type=text], select {
   display: block;
 }
 
-
 .drop-dept {
   display: block;
 }
 
-
-
-.drop-dept svg{
+.drop-dept svg {
   margin: -6px 0;
 }
 
 .dept-item {
   display: none;
   position: absolute;
-  background-color: #cec099;
+  background-color: #c2c1c0;
   width: 300px !important;
   padding: 0 10px !important;
+  margin: 0 -12px !important;
 }
-
-
 
 .dept-item li a {
   text-decoration: none;
@@ -176,8 +171,6 @@ input[type=text], select {
   background-color: #dddddd;
 }
 
-
-
 .drop-dept:hover .dept-item {
   display: block;
 }
@@ -185,7 +178,7 @@ input[type=text], select {
   display: block;
 }
 
-.right-item p{
+.right-item p {
   text-align: center;
   font-weight: bold;
   text-decoration: underline;
@@ -211,7 +204,7 @@ input[type=text], select {
   margin: 0 auto;
 }
 
-.image-item p{
+.image-item p {
   text-align: center;
   font-weight: bold;
   text-decoration: underline;
@@ -239,7 +232,7 @@ input[type=text], select {
 }
 
 .image-text {
-  background-color: #ddc898;
+  background-color: #c2c1c0;
   padding: 10px;
   text-overflow: ellipsis;
 }
@@ -280,7 +273,7 @@ input[type=text], select {
   margin: 0 30px;
 }
 
-.footer-container{
+.footer-container {
   width: 1800px;
   margin: 0 auto;
 }

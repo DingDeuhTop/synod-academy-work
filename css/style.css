@@ -74,7 +74,7 @@ body {
 #side_menu li:hover {
   list-style: none;
   line-height: 50px;
-  background-color: #dbc894;
+  background-color: #c2c1c0;
   border-top: 1px solid #dc3545;
 }
 /* .drop-btn {
@@ -100,7 +100,7 @@ body {
 .dropdown-container {
   display: none;
   position: absolute;
-  background-color: #c0ae9d;
+  background-color: #c2c1c0;
   width: 250px;
   padding: 0 10px !important;
   margin: 0 -11px;
@@ -146,7 +146,7 @@ body {
 .dept-item {
   display: none;
   position: absolute;
-  background-color: #c0ae9d;
+  background-color: #c2c1c0;
   width: 350px;
   padding: 0 10px !important;
   margin: 0 -11px;
@@ -158,7 +158,7 @@ body {
 }
 
 .dept-item li a:hover {
-  background-color: #dddddd;
+  background-color: #c2c1c0;
 }
 
 .drop-item{
@@ -244,7 +244,8 @@ input[type=text], select {
 
 input[type=submit] {
   width: 30%;
-  background-color: #4CAF50;
+  background-color: #3e443e;
+  font-size: 16px;
   color: white;
   padding: 12px 20px;
   margin: 0 10px;
@@ -295,7 +296,7 @@ input[type=submit] {
 
 #tawngtai input[type=submit] {
   width: 30%;
-  background-color: #4CAF50;
+  background-color: #3e443e;
   color: white;
   padding: 12px 20px;
   margin: 10px 10px;
