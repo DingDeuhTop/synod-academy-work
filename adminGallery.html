@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Gallery</title>
+    <link rel="stylesheet" href="css/admingallery.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="header-content">
+        <div id="header_image">
+          <div class="img">
+            <img src="img/img6.png" alt="logo" />
+          </div>
+          <div class="header-text">
+            <p class="text-1">Presbyterian Church of India</p>
+            <p class="text-2">Mizoram Synod</p>
+          </div>
+        </div>
+        <div id="header_search">
+          <input type="text" />
+          <input type="submit" value="search" />
+        </div>
+      </div>
+    </div>
+    <div class="content">
+        <div id="side_menu">
+          <nav>
+            <ul>
+              <li class="admin-tag">
+                <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"
+                  />
+                </svg>
+                <p>Admin</p>
+              </li>
+              <li>
+                <a href="adminIndex.html"> Home </a>
+              </li>
+              <li class="drop-btn">
+                About us
+                <ul class="dropdown-container">
+                  <li>
+                    <a href="#"> At a glance </a>
+                  </li>
+                  <hr />
+                  <li>
+                    <a href="#"> Statistical Information </a>
+                  </li>
+                  <hr />
+                  <li>
+                    <a href="#"> Doctrine </a>
+                  </li>
+                  <hr />
+                  <li>
+                    <a href="adminAbout.html"> Contact </a>
+                  </li>
+                  <hr />
+                  <li>
+                    <a href="#"> Guest House </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="drop-dept">
+                Deptt./Comt.
+                <ul class="dept-item">
+                  <li>
+                    <a href="#">Youth Fellowship(Kristian Thalai Pawl)</a>
+                  </li>
+                  <hr />
+                  <li>
+                    <a href="#">Family Guidance & Counselling Center</a>
+                  </li>
+                  <hr />
+                  <li>
+                    <a href="#">Presbyterian Bible School</a>
+                  </li>
+                  <hr />
+                  <li>
+                    <a href="#">Presbyterian Communications</a>
+                  </li>
+                  <hr />
+                  <li>
+                    <a href="#">Presbyterian Women's Fellowship</a>
+                  </li>
+                  <hr />
+                  <li>
+                    <a href="#">Synod Archives</a>
+                  </li>
+                  <hr />
+                  <li>
+                    <a href="#">Synod Information & Publicity(Synfo)</a>
+                  </li>
+                  <hr />
+                  <li>
+                    <a href="#">Synod Hospital</a>
+                  </li>
+                  <hr />
+                  <li>
+                    <a href="#">Synod Mission Board(SMB)</a>
+                  </li>
+                </ul>
+              </li>
+              <li>Media ministry</li>
+              <li>Counselling</li>
+              <li>Prayer Request</li>
+              <li>Letter</li>
+              <li>
+                <a href="adminGallery.html"></a>
+                Gallery</li>
+              <li>
+                <a href="adminlogin.html"> Logout </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-content">
+            <div class="main-content-input">
+                <input type="text" />
+              <input type="submit" value="Add" />
+            </div>
+            <table id="gallery-content">
+                <tr>
+                    <th>Image</th>
+                    <th>Upload date</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="./img/ex.jpg" alt="img">
+                    </td>
+                    <td>2022.04.01</td>
+                    <td>
+                        <button id="edit">Edit</button>
+                        <button id="delete">Delete</button>
+                        <button id="publish">Publish</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -50,7 +50,7 @@
               <p>Admin</p>
             </li>
             <li>
-              <a href="#"> Home </a>
+              <a href="adminIndex.html"> Home </a>
             </li>
             <li class="drop-btn">
               About us
@@ -68,7 +68,7 @@
                 </li>
                 <hr />
                 <li>
-                  <a href="#"> Contact </a>
+                  <a href="adminAbout.html"> Contact </a>
                 </li>
                 <hr />
                 <li>
@@ -120,7 +120,11 @@
             <li>Counselling</li>
             <li>Prayer Request</li>
             <li>Letter</li>
-            <li>Gallery</li>
+            <li>
+              <a href="adminGallery.html">
+                Gallery
+              </a>
+            </li>
             <li>
               <a href="adminlogin.html"> Logout </a>
             </li>
@@ -130,6 +134,10 @@
       <div class="content-item">
         <form action="#">
           <h3>Image slider/logo</h3>
+          <div class="logo-input">
+            <input type="file" value="image" />
+            <input type="submit" value="Add" />
+          </div>
           <div class="image-wrapper">
             <img src="img/img6.png" alt="" />
             <div class="image-action">
@@ -151,8 +159,6 @@
               </div>
             </div>
           </div>
-          <input type="file" value="image" />
-          <input type="submit" value="Add" />
         </form>
         
         <div class="content-menu">
@@ -220,30 +226,21 @@
           </div>
           <div class="programme">
             <h3>Programme</h3>
-            <form action="#">
-              <div class="text-content">
+            <div class="text-content">
+                <form action="#">
                 <label for="programme_topic">Topic</label>
                 <input
                   id="programme_topic"
                   type="text"
                   name="programme_topic"
                   placeholder="Enter Topic"
-                />
+                  />
+                  <textarea name="program" id="program_content" cols="30" rows="10"></textarea>
+                  <br>
+                  <input type="submit" name="add" value="Add" />
+                  
               </form>
               </div>
-              <div class="text-content">
-                <form action="#">
-                  <label for="programme_content">Content</label>
-                  <input
-                    id="programme_content"
-                    type="text"
-                    name="programme_content"
-                    placeholder="Enter Content"
-                  />
-                </div>
-                <br>
-                <button type="submit" name="add">Add</button>
-                </form>
           </div>
         </div>
       </div>

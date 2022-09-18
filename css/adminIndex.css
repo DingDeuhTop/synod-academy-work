@@ -197,6 +197,10 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+.content-item .logo-input{
+  margin: 20px 0;
+}
+
 .image-wrapper{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -330,7 +334,7 @@ textarea{
 
 .periodical-document input[type="text"],
 select {
-  width: 80%;
+  width: 600px;
   padding: 12px 20px;
   margin: 10px 10px;
   display: inline-block;
@@ -358,7 +362,7 @@ select {
 
 .content-other input[type="text"],
 select {
-  width: 80%;
+  width: 600px;
   padding: 12px 20px;
   margin: 10px 10px;
   display: inline-block;
@@ -377,7 +381,7 @@ select {
 
 
 
-.content-other .programme button{
+.content-other .programme input[type=submit]{
   background-color: #77b077;
   width: 90px;
   border-radius: 5px;
@@ -389,6 +393,10 @@ select {
 
 .content-other .programme h3{
   text-decoration: underline;
+}
+
+.programme .text-content{
+  width: 600px;
 }
 
 .content-item h3{

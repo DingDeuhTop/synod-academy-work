@@ -39,7 +39,8 @@ body {
   margin: 16px auto;
 }
 
-#header_search input[type=text], select{
+#header_search input[type="text"],
+select {
   width: 50%;
   padding: 12px 20px;
   margin: 0 10px;
@@ -49,7 +50,7 @@ body {
   box-sizing: border-box;
 }
 
-#header_search input[type=submit] {
+#header_search input[type="submit"] {
   width: 30%;
   background-color: #3e443e;
   font-size: 16px;
@@ -73,13 +74,15 @@ body {
   font-weight: bold;
 }
 
+.content {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
 #side_menu {
   width: 200px;
   float: left;
   margin: 10px 30px;
-  background-color: #f1f1f1;
-  border-radius: 20px;
-  box-shadow: 5px 4px 4px 0 #d1cdcd;
 }
 
 #side_menu ul li a {
@@ -133,10 +136,10 @@ body {
 }
 
 /* .drop-btn li {
-        display: block;
-        position: relative;
-        padding: 5px;
-      } */
+          display: block;
+          position: relative;
+          padding: 5px;
+        } */
 
 .dropdown-container {
   display: none;
@@ -170,9 +173,9 @@ body {
   display: none;
   position: absolute;
   background-color: #c2c1c0;
-  margin: 0 -12px !important;
   width: 300px !important;
   padding: 0 10px !important;
+  margin: 0 -12px !important;
 }
 
 .dept-item li a {
@@ -199,100 +202,67 @@ body {
   margin: 0;
 }
 
-#header_search {
-  float: right;
+.main-content {
+  margin: 20px 0;
 }
 
-.container {
-  width: 1000px;
-  margin: 0 auto;
-}
-
-.content-card {
-  margin: 10px 20px;
-  background-color: #f1f1f1;
-  border-radius: 20px;
-  box-shadow: 5px 4px 4px 0 #d1cdcd;
-  display: grid;
-  grid-template-rows: 50% ;
-}
-
-.content-card .card {
-  float: left;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card-section .card-content .card-add {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.card-section .card-content .card-add svg {
-  background-color: #4b5b54;
-  border-radius: 5px;
-}
-
-.card .card-section {
-  width: 250px;
-  float: left;
-}
-
-.card .card-section .card-content {
-  background-color: #c5c5c5;
-  margin: 10px;
-  padding: 30px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 7px 0 #bab9b9;
-}
-.card-section .card-content .card-action a {
-  text-decoration: none;
-  color: #dddddd;
-}
-
-.information {
-  background-color: #f1f1f1;
-  border-radius: 20px;
-  margin: 10px 0;
-}
-
-.info-item .card .card-add-action .card-add {
-  display: flex;
-  justify-content: center;
-  background-color: #4b5b54;
-  border-radius: 5px;
-  color: #f1f1f1;
-  padding: 5px;
+.main-content .main-content-input input[type="text"],
+select {
+  width: 50%;
+  padding: 12px 20px;
   margin: 0 10px;
+  display: inline;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.info-item .card .card-add-action .card-add span{
-  margin: 5px 0;
+.main-content .main-content-input input[type="submit"] {
+  width: 100px;
+  background-color: #458b45;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 12px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.info-item .card .card-add-action{
-  float: right;
+.main-content #gallery-content {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.info-item .card .card-section {
+.main-content #gallery-content th {
+  padding: 12px 0;
+  text-align: left;
+  font-size: 20px;
+}
+
+.main-content #gallery-content tr td img {
   width: 300px;
-  background-color: #efefef;
-  margin: 10px;
+}
+
+.main-content #gallery-content tr td button {
+  width: 80px;
   padding: 10px;
+  color: #ffffff;
+  border: none;
+  font-size: 20px;
+}
+
+.main-content #gallery-content tr td #edit {
+  background-color: #75ac75;
   border-radius: 5px;
 }
 
-.info-item .card .card-section svg {
-  float: left;
+.main-content #gallery-content tr td #delete {
+  background-color: #dc3545;
+  border-radius: 5px;
 }
 
-.card-action {
-  background-color: #4b5b54;
-  width: 90px;
-  text-align: center;
-  padding: 10px;
-  border-radius: 3px;
-  color: #dddddd;
+.main-content #gallery-content tr td #publish {
+  background-color: #75ac75;
+  border-radius: 5px;
 }
