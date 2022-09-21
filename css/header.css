@@ -1,0 +1,40 @@
+#header {
+    padding: 10px;
+    background-color: #e1e1e1;
+  }
+  
+  .header-content {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  #header_image {
+    margin-left: 250px;
+  }
+  
+  #header_image p {
+    margin: 0 10px;
+  }
+  
+  #header_image img {
+    width: 60px;
+    height: 60px;
+    float: left;
+  }
+  
+  #header_text {
+    margin: 16px auto;
+  }
+  
+  #header_text input {
+    margin-right: 5px;
+  }
+  
+  .header-text {
+    margin: 10px 60px;
+  }
+  
+  .text-2 {
+    font-weight: bold;
+  }
